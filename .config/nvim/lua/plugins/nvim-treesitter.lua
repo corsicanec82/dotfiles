@@ -4,7 +4,7 @@ return {
   version = "^0.9.3",
   build = ":TSUpdate",
   config = function()
-    -- TODO: don't work. mayy be problem with this parser
+    -- TODO: don't work. may be problem with this parser
     -- local parser_config = require("nvim-treesitter.parsers").get_parser_configs()
     -- parser_config.caddy = {
     --   install_info = {
