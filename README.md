@@ -19,3 +19,4 @@ stow -D .
 ## tools
 
 * neovim
+* yazi
