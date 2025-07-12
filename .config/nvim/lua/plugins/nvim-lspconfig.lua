@@ -19,7 +19,7 @@ return {
     -- npm install -g @biomejs/biome
     lspconfig.biome.setup({ on_attach = lsp_format.on_attach, capabilities = capabilities })
 
-    -- mise use --global lua-language-server@3.13.9
+    -- mise use --global lua-language-server@3.15.0
     lspconfig.lua_ls.setup({
       on_attach = lsp_format.on_attach,
       settings = {
