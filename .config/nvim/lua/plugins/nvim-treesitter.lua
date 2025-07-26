@@ -1,8 +1,9 @@
 -- plugin provides syntax parsing using Tree-sitter for improved syntax highlighting, code navigation, and better code understanding
 return {
   "nvim-treesitter/nvim-treesitter",
-  version = "^0.9.3",
+  version = "^0.10.0",
   build = ":TSUpdate",
+  -- lazy = false,
   config = function()
     -- TODO: don't work. may be problem with this parser
     -- local parser_config = require("nvim-treesitter.parsers").get_parser_configs()
