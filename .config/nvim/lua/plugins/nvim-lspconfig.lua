@@ -1,7 +1,7 @@
 -- provides easy configurations for setting up built-in LSP
 return {
   "neovim/nvim-lspconfig",
-  version = "^2.3.0",
+  version = "^2.5.0",
   dependencies = {
     "lukas-reineke/lsp-format.nvim",
     -- "williamboman/mason-lspconfig.nvim",

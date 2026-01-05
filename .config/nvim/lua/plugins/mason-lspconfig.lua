@@ -1,7 +1,7 @@
 -- bridge between mason.nvim and nvim-lspconfig, automating the setup of LSP servers installed via Mason, ensuring seamless integration
 return {
   "williamboman/mason-lspconfig.nvim",
-  version = "^2.0.0",
+  version = "^2.1.0",
   config = function()
     require("mason-lspconfig").setup({
       ensure_installed = {

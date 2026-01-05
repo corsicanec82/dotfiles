@@ -1,7 +1,7 @@
 -- highlight and search for todo comments like TODO, HACK, BUG in code
 return {
   "folke/todo-comments.nvim",
-  version = "^1.4.0",
+  version = "^1.5.0",
   dependencies = {
     "nvim-lua/plenary.nvim",
   },
