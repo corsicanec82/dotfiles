@@ -48,6 +48,7 @@ local plugins = {
   require("plugins.nvim-treesitter-endwise"),
   require("plugins.nvim-treesitter"),
   require("plugins.nvim-ts-context-commentstring"),
+  require("plugins.other"),
   -- -- require("plugins.persistence"),
   require("plugins.telescope"),
   require("plugins.todo-comments"),
