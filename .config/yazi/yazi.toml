@@ -60,3 +60,7 @@ rules = [
 prepend_previewers = [
   { name = "*.md", run = "glow" },
 ]
+prepend_fetchers = [
+  { id = "git", url = "*", run = "git" },
+  { id = "git", url = "*/", run = "git" },
+]
