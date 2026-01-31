@@ -9,11 +9,6 @@ rev = "03cdd4b"
 hash = "53f826884e2c7e521cecc492a7f31d7e"
 
 [[plugin.deps]]
-use = "yazi-rs/plugins:max-preview"
-rev = "03cdd4b"
-hash = "a8025f2bb311e869069364fba01abffc"
-
-[[plugin.deps]]
 use = "yazi-rs/plugins:smart-enter"
 rev = "03cdd4b"
 hash = "56fdabc96fc1f4d53c96eb884b02a5be"
@@ -22,6 +17,11 @@ hash = "56fdabc96fc1f4d53c96eb884b02a5be"
 use = "Reledia/glow"
 rev = "bd3eaa5"
 hash = "92b5c58159a51c567f82b618cee2b78"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:toggle-pane"
+rev = "557684b"
+hash = "8a7c58225816a163a6e8730c0adafbc8"
 
 [flavor]
 deps = []
