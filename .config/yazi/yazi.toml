@@ -33,7 +33,7 @@ play = [
 
 [open]
 rules = [
-  { name = "*/", use = [ "edit", "open", "reveal" ] },
+  { url = "*/", use = [ "edit", "open", "reveal" ] },
 
   { mime = "text/*",  use = [ "edit", "reveal" ] },
   { mime = "image/*", use = [ "open", "reveal" ] },
@@ -58,9 +58,11 @@ rules = [
 
 [plugin]
 prepend_previewers = [
-  { name = "*.md", run = "glow" },
+  { url = "*.md", run = 'piper -- CLICOLOR_FORCE=1 glow -w=$w -s=dark "$1"' },
+  { url = "*/", run = 'piper -- eza -TL=3 --color=always --icons=always --group-directories-first --no-quotes "$1"' },
+  { url = "*.tar*", run = 'piper --format=url -- tar tf "$1"' },
 ]
 prepend_fetchers = [
-  { id = "git", url = "*", run = "git" },
-  { id = "git", url = "*/", run = "git" },
+  { id = "git", url = "*", run = "git", group = "git" },
+  { id = "git", url = "*/", run = "git", group = "git" },
 ]
