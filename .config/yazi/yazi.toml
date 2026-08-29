@@ -63,6 +63,6 @@ prepend_previewers = [
   { url = "*.tar*", run = 'piper --format=url -- tar tf "$1"' },
 ]
 prepend_fetchers = [
-  { id = "git", url = "*", run = "git", group = "git" },
-  { id = "git", url = "*/", run = "git", group = "git" },
+  { url = "*", run = "git", group = "git" },
+  { url = "*/", run = "git", group = "git" },
 ]
